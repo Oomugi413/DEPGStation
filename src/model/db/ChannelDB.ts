@@ -2,7 +2,7 @@ import { inject, injectable } from 'inversify';
 import { FindOptionsWhere } from 'typeorm';
 import { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity';
 import * as apid from '../../../api';
-import * as mapid from '../../../node_modules/mirakurun/api';
+import * as mapid from '../../../node_modules/dmirakurun/api';
 import Channel from '../../db/entities/Channel';
 import StrUtil from '../../util/StrUtil';
 import IConfiguration from '../IConfiguration';
@@ -114,6 +114,8 @@ export default class ChannelDB implements IChannelDB {
                 return 2;
             case 'SKY':
                 return 3;
+            case 'BS4K':
+                return 5;
             default:
                 return 4;
         }

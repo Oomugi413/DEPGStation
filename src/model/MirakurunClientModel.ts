@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import { inject, injectable } from 'inversify';
-import mirakurun from 'mirakurun';
+import mirakurun from 'dmirakurun';
 import * as path from 'path';
 import * as url from 'url';
 import IConfigFile from './IConfigFile';

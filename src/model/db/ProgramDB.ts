@@ -2,7 +2,7 @@ import { inject, injectable } from 'inversify';
 import { FindOptionsWhere, In, LessThan, LessThanOrEqual, MoreThan, MoreThanOrEqual, ObjectLiteral } from 'typeorm';
 import { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity';
 import * as apid from '../../../api';
-import * as mapid from '../../../node_modules/mirakurun/api';
+import * as mapid from '../../../node_modules/dmirakurun/api';
 import Program from '../../db/entities/Program';
 import DateUtil from '../../util/DateUtil';
 import StrUtil from '../../util/StrUtil';
@@ -643,6 +643,9 @@ export default class ProgramDB implements IProgramDB {
             }
             if (!!searchOption.SKY === true) {
                 channelTypes.push('SKY');
+            }
+            if (!!searchOption.BS4K === true) {
+                channelTypes.push('BS4K');
             }
             this.createInQuery(query, 'channelType', channelTypes);
         }

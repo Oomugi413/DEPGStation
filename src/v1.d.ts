@@ -1,7 +1,7 @@
 export type ProgramId = number;
 export type ServiceItemId = number;
 export type UnixtimeMS = number;
-export type ChannelType = 'GR' | 'BS' | 'CS' | 'SKY';
+export type ChannelType = 'GR' | 'BS' | 'CS' | 'SKY' | 'BS4K';
 export type ProgramVideoType = 'mpeg2' | 'h.264' | 'h.265';
 export type ProgramVideoResolution = '240p' | '480i' | '480p' | '720p' | '1080i' | '2160p' | '4320p';
 export enum ProgramAudioSamplingRate {
@@ -33,6 +33,7 @@ export interface OldRuleItem {
     BS: boolean | null;
     CS: boolean | null;
     SKY: boolean | null;
+    BS4K: boolean | null;
     station: number | null;
     genrelv1: number | null;
     genrelv2: number | null;

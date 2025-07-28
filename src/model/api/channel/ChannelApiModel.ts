@@ -1,5 +1,5 @@
 import { inject, injectable } from 'inversify';
-import mirakurun from 'mirakurun';
+import mirakurun from 'dmirakurun';
 import * as apid from '../../../../api';
 import IChannelDB from '../../db/IChannelDB';
 import IMirakurunClientModel from '../../IMirakurunClientModel';

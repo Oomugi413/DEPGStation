@@ -1,5 +1,5 @@
 import { inject, injectable } from 'inversify';
-import mirakurun from 'mirakurun';
+import mirakurun from 'dmirakurun';
 import Util from '../util/Util';
 import IDBOperator from './db/IDBOperator';
 import IConnectionCheckModel from './IConnectionCheckModel';

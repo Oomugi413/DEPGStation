@@ -4,7 +4,7 @@ import * as http from 'http';
 import { inject, injectable } from 'inversify';
 import * as path from 'path';
 import * as stream from 'stream';
-import * as mapid from '../../../../node_modules/mirakurun/api';
+import * as mapid from '../../../../node_modules/dmirakurun/api';
 import * as apid from '../../../../api';
 import DropLogFile from '../../../db/entities/DropLogFile';
 import Recorded from '../../../db/entities/Recorded';
